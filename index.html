@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Reflection</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="scss/style.scss">
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+  <body onload="get_image()">
+    <header>
+      <!---- HEADING ---->
+      <div class="container header">
+        <div class="header-text">
+          JavaScript Array Reflection!
+        </div> <!-- end of header-text -->
+      </div> <!-- end of container div -->
+    </header>
+   <!---- EMAIL ---->
+    <form id="form">
+     <label for="email">Enter your email:</label>
+    <input type="email" id="email"> 
+    <div id="error-text"></div>
+    </form>
+    
+    <!---- IMAGE ---->
+  <div class="gallery">
+    <div class="gallery-image">
+        <img src="" alt="" class="image" />
+    </div> <!-- end of gallery-image -->
+  </div> <!-- end of gallery -->
+     
+  
+  <!---- BUTTONS ---->
+  <div class="container images">
+    <div class="images section">
+      <span class="space">
+        <span id="btn-grid">
+      <button id="btn-data" onclick="get_image()"> New Image</button>
+      <button id="btn-save" onclick="_SaveData()"> Save Image</button>
+    </span>
+    </div> <!-- end of images section -->
+    </div> <!-- end of container images -->
+    
+     <div class="email-content">
+        <div class="email"><br><span id="email2"></span></div> 
+       </div>
+    <div class="image-content" id="text">
+    </div>
+ </body>
+
+
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/jquery-3.6.1.min.map"></script>
+  <script src="js/all.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
